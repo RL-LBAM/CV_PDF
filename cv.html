@@ -6,6 +6,9 @@
     <title>Zeping_CV</title>
 </head>
 <body>
-    <embed src="https://github.com/RL-LBAM/CV_PDF/raw/main/Zeping_CV.pdf" width="100%" height="600px" />
+    <?php
+        header("Content-Disposition: inline; filename=Zeping_CV.pdf");
+        readfile("https://github.com/RL-LBAM/CV_PDF/raw/main/Zeping_CV.pdf");
+    ?>
 </body>
 </html>
